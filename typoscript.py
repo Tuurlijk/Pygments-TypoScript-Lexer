@@ -14,7 +14,7 @@
     `TypoScriptHtmlDataLexer`
         Lexer that highlights markers, constants and registers within html tags.
 
-    version: 1.1.3
+    version: 1.1.4
 
     :copyright: Copyright 2013-now by Donation Based Hosting.
     :license: BSD, see LICENSE for details.
@@ -97,7 +97,7 @@ class TypoScriptLexer(RegexLexer):
     http://docs.typo3.org/typo3cms/TyposcriptReference/
     """
     name = 'TypoScript'
-    aliases = ['typoscript']
+    aliases = ['typoscript', 'ts']
     filenames = ['*.ts','*.txt']
     mimetypes = ['text/typoscript']
 
