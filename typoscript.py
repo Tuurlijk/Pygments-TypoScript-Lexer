@@ -14,7 +14,7 @@
     `TypoScriptHtmlDataLexer`
         Lexer that highlights markers, constants and registers within html tags.
 
-    version: 1.1.5
+    version: 1.1.6
 
     :copyright: Copyright 2013-now by Donation Based Hosting.
     :license: BSD, see LICENSE for details.
@@ -126,7 +126,7 @@ class TypoScriptLexer(RegexLexer):
             (r'(?:(=?\s*<?\s+|^\s*))(cObj|field|config|content|constants|FEData|file|frameset|includeLibs|lib|page|plugin|register|resources|sitemap|sitetitle|styles|temp|tt_[^:\.\n\s]*|types|xmlnews|INCLUDE_TYPOSCRIPT|_CSS_DEFAULT_STYLE|_DEFAULT_PI_VARS|_LOCAL_LANG)(?![\w\-_])',
               bygroups(Operator, Name.Builtin)),
               # Content objects
-            (r'(?=[\w\-_])(CASE|CLEARGIF|COA|COA_INT|COBJ_ARRAY|COLUMNS|CONTENT|CTABLE|EDITPANEL|FILE|FILES|FLUIDTEMPLATE|FORM|HMENU|HRULER|HTML|IMAGE|IMGTEXT|IMG_RESOURCE|LOAD_REGISTER|MEDIA|MULTIMEDIA|OTABLE|QTOBJECT|RECORDS|RESTORE_REGISTER|SEARCHRESULT|SVG|SWFOBJECT|TEMPLATE|TEXT|USER|USER_INT)(?![\w\-_])', Name.Class),
+            (r'(?=[\w\-_])(CASE|CLEARGIF|COA|COA_INT|COBJ_ARRAY|COLUMNS|CONTENT|CTABLE|EDITPANEL|FILE|FILES|FLUIDTEMPLATE|FORM|HMENU|HRULER|HTML|IMAGE|IMGTEXT|IMG_RESOURCE|LOAD_REGISTER|MEDIA|MULTIMEDIA|OTABLE|PAGE|QTOBJECT|RECORDS|RESTORE_REGISTER|SEARCHRESULT|SVG|SWFOBJECT|TEMPLATE|TEXT|USER|USER_INT)(?![\w\-_])', Name.Class),
               # Menu states
             (r'(?=[\w\-_])(ACT|ACTIFSUB|ACTIFSUBRO|ACTRO|CUR|CURIFSUB|CURIFSUBRO|CURRO|IFSUB|IFSUBRO|NO|SPC|USERDEF1|USERDEF1RO|USERDEF2|USERDEF2RO|USR|USRRO)', Name.Class),
               # Menu objects
