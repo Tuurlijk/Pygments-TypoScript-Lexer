@@ -50,6 +50,8 @@ page {
    # Change the default rendering of images to match lightbox requirements
 tt_content.image.20.1.imageLinkWrap {
    JSwindow = 0
+   test = MyExtension\Path\To\Class
+
    directImageLink = 1
    linkParams.ATagParams {
       dataWrap = class= "lightbox" rel="fancybox{field:uid}"

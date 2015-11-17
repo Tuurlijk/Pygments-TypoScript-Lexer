@@ -164,7 +164,7 @@ class TypoScriptLexer(RegexLexer):
         ],
         'structure': [
               # Brackets and braces
-            (r'[\{\}\(\)\[\]]', String.Symbol),
+            (r'[\{\}\(\)\[\]\\\\]', String.Symbol),
         ],
         'constant': [
               # Constant: {$some.constant}
