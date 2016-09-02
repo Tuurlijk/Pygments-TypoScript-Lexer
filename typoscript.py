@@ -182,7 +182,7 @@ class TypoScriptLexer(RegexLexer):
             (r'(\s*#\s*\n)', Comment),
         ],
         'other': [
-            (r'[\w"\-_!\/&;]+', Text),
+            (r'[\w"\-_!\/&;@]+', Text),
         ],
     }
 
